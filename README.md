@@ -68,3 +68,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+SQL to create the respective table:
+create table atividade(
+	idativiade serial primary key,
+	nmatividade varchar(50) not null,
+	dsatividade text null,
+	flativo char(1) check (flativo in ('S', 'N')) not null,
+	daatividade TIMESTAMPTZ default NOW()
+)
+
