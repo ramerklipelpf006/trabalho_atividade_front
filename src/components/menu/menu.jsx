@@ -3,7 +3,7 @@ import { NavLink, Outlet } from "react-router-dom";
 const Menu = () => {
     return (
         <div>
-            <NavLink className="navbar navbar-expand-lg bg-body-tertiary">
+            <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
                     <NavLink className="navbar-brand" to="/">Navbar</NavLink>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +20,7 @@ const Menu = () => {
                     </ul>
                     </div>
                 </div>
-            </NavLink>
+            </nav>
             <Outlet />
         </div>
     )
